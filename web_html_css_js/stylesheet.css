@@ -3,7 +3,7 @@
 /* Body */
 body {
     font-family: 'source-sans-pro', sans-serif;
-    background-color: #00aeef;
+    background-color: #36454A;
     margin: 0;
     font-style: normal;
     font-weight: 200;
@@ -21,7 +21,9 @@ body {
 header {
     width: 100%;
     height: 4%;
-    background-color: #ec008c;
+	text-align: center;
+	float: center;
+    background-color: FF7F2B;
     border-bottom: 5px solid #00baff;
 	border-top: 5px solid #00baff;
 }
@@ -127,15 +129,9 @@ ul li:hover a {
     float: center;
     margin-left: 45px;
 	padding: 20px;
-    color: #000000;
+    color: #d3d3d3;
 }
 
-.code-block {
-  background-color: #ffc1c1; /* Light red */
-  padding: 10px;
-  border-radius: 5px;
-  font-family: monospace;
-}
 .copy-btn {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -152,7 +148,7 @@ ul li:hover a {
 .about {
     padding: 0;
     display: inline-block;
-    background-color: #ffc000;
+    background-color: #181A1C;
 }
 
 .steps {
@@ -197,17 +193,17 @@ ul li:hover a {
 
 .code-block {
     font-family: "Courier New", monospace;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+    background-color: #353738;
+    border: 1px solid #232425;border-radius: 5px;
     border-left: 3px solid #f36d33;
-    color: #666;
+    color: #fff;
     page-break-inside: avoid;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.6;
     margin-bottom: 16px;
     max-width: 100%;
     overflow: auto;
-    padding: 5px;
+    padding: 7px;
     display: block;
     word-wrap: break-word;
 }
