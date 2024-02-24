@@ -14,7 +14,7 @@ body {
     width: 70%;
     margin: 0 auto;
     height: 1000px;
-    background-color: #FFFFFF;
+    background-color: #a2cda3;
 }
 
 /* Navigation */
@@ -23,9 +23,12 @@ header {
     height: 4%;
 	text-align: center;
 	float: center;
-    background-color: FF7F2B;
-    border-bottom: 5px solid #00baff;
-	border-top: 5px solid #00baff;
+    background-color: #a2cda3;
+	
+    border-bottom: 1.5px solid #284828;
+	
+	border-top: 1.5px solid #284828;
+	
 }
 .inner-shadow {
         width: 200px;
@@ -37,7 +40,9 @@ header {
     }
 .logo {
     color: hsla(0,0%,0%,0.71);
-    font-weight: bold;
+    font-weight: lighter;
+	font-size: 12px;
+	text-align: top; 
     text-align: left;
     width: 70%;
     float: left;
@@ -48,6 +53,22 @@ header {
 
     .interactive-button {
 		border-radius: 3px;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        transition-duration: 0.4s;
+    }
+
+    .interactive-button:hover {
+        background-color: #45a049;
+    }
+    .pscriptbtn {
         padding: 10px 20px;
         background-color: #4CAF50; /* Green */
         color: white;
