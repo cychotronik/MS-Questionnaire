@@ -1,298 +1,150 @@
-@charset "UTF-8";
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Code</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo"><a href="https://github.com/cychotronik/MS-Questionnaire.git">Github Repository</a></h4>
+    </a>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">CODE <span class="light">SAMPLES</span></h2>
+    <p class="tagline">Technical Writing, Design, Web Development, and Scripting</p>
+  </section>
+  <!-- About Section -->
+	
+  <section class="about" id="about">
+	  <h2 class="intro">Introduction</h2> 
+	  <p>-</p>
+    <p class="text_column"> Step into my digital realm – an introductory showcase revealing my versatile proficiency in technical writing, design, web development, and basic scripting. This website offers a fleeting glimpse into the broad spectrum of abilities I wield within these domains. Within this curated collection, I present a surface-level exploration of my technical writing expertise, highlighting my adeptness in translating complex concepts into easily understandable content. As a demonstration, you'll encounter step-by-step guides, such as the installation of WSL and the cloning of a GitHub repository, showcasing my commitment to clarity, simplicity, and ongoing skills development as evidenced by frequent updates to the repository.
 
-/* Body */
-body {
-    font-family: 'source-sans-pro', sans-serif;
-    background-color: #00aeef;
-    margin: 0;
-    font-style: normal;
-    font-weight: 200;
-}
+Simultaneously, you'll observe my proficiency in both minimalist and intricate design, coupled with my capabilities in web development. Here, I emphasize crafting interfaces that seamlessly merge aesthetics with functionality, emphasizing the symbiotic relationship between form and purpose. This showcase intentionally maintains a superficial layer, providing a snapshot of my skills without delving excessively into the intricacies. It acts as a teaser, encouraging you to envision the potential depth and creativity that could be injected into more extensive projects.
 
-/* Container */
-.container {
-    width: 70%;
-    margin: 0 auto;
-    height: 1000px;
-    background-color: #FFFFFF;
-}
-
-/* Navigation */
-header {
-    width: 100%;
-    height: 4%;
-    background-color: #ec008c;
-    border-bottom: 5px solid #00baff;
-}
-
-.logo {
-    color: #fff;
-    font-weight: bold;
-    text-align: left;
-    width: 50%;
-    float: left;
-    margin: 10px 0 0 25px;
-    letter-spacing: 0px;
-}
-
-nav {
-    float: right;
-    width: 50%;
-    text-align: right;
-    margin-right: 25px;
-}
-
-header nav ul {
-    list-style: none;
-    float: right;
-}
-
-nav ul li {
-    float: left;
-    color: #FFFFFF;
-    font-size: 14px;
-    text-align: left;
-    margin-right: 25px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    transition: all 0.3s linear;
-}
-
-ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-ul li:hover a {
-    color: #ffc000;
-}
-
-.hero_header {
-    color: #FFFFFF;
-    text-align: center;
-    margin: 0 0 10px 0;
-    letter-spacing: 4px;
-}
-
-/* Hero Section */
-.hero {
-    text-align: left;
-    background-color: #B3B3B3;
-    padding: 0;
-}
-
-.title {
-    padding-left: 0;
-}
-
-.light {
-    text-align: center;
-    font-weight: bold;
-    color: #717070;
-}
-
-.tagline {
-    text-align: center;
-    padding-left: 10px;
-    color: #FFFFFF;
-    margin: 4px 0 0;
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* About Section */
-.text_column {
-    width: 80%;
-    text-align: left;
-    font-weight: lighter;
-    line-height: 25px;
-    float: left;
-    padding: 0 20px;
-    color: #000000;
-}
-
-.code-block {
-  background-color: #ffc1c1; /* Light red */
-  padding: 10px;
-  border-radius: 5px;
-  font-family: monospace;
-}
-.copy-btn {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.about {
-    padding: 35px 35px;
-    display: inline-block;
-    background-color: #ffc000;
-}
-
-.steps {
-    text-align: left;
-    padding-left: 10px;
-}
-
-/* Stats Gallery */
-.stats {
-    color: #717070;
-    margin-bottom: 5px;
-}
-
-.body2 {
-    clear: both;
-    display: inline-block;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 0 20px 2
-		5px;
-    margin: 5px 0 0;
-}
-
-.body2_column {
-    width: 29%;
-    text-align: left;
-    font-weight: lighter;
-    line-height: 25px;
-    float: left;
-    padding: 0 20px;
-    color: #A3A3A3;
-}
-
-.body2_right_column {
-    width: 80%;
-    text-align: left;
-    font-weight: lighter;
-    line-height: 25px;
-    float: left;
-    padding: 0 10px 1px;
-    color: #A3A3A3;
-}
-
-.code-block2 {
-    font-family: "Courier New", monospace;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #666;
-    page-break-inside: avoid;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    max-width: 100%;
-    overflow: auto;
-    padding: 5px;
-    display: block;
-    word-wrap: break-word;
-}
-
-.thumbnail {
-    width: 25%;
-    text-align: center;
-    float: left;
-    margin-top: 35px;
-}
-
-.gallery .thumbnail h4 {
-    margin: 5px;
-    color: #52BAD5;
-}
-
-.gallery .thumbnail p {
-    margin: 0;
-    color: #A3A3A3;
-}
-
-/* Parallax Section */
-.banner {
-    background-color: #2D9AB7;
-    background-image: url(../images/parallax.png);
-    height: 400px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* More info */
-footer {
-    background-color: #FFFFFF;
-    padding-bottom: 35px;
-}
-
-.footer_column {
-    width: 50%;
-    text-align: center;
-    padding-top: 30px;
-    float: left;
-}
-
-footer .footer_column h3 {
-    color: #B3B3B3;
-    text-align: center;
-}
-
-footer .footer_column p {
-    color: #717070;
-    background-color: #FFFFFF;
-}
-
-.cards {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    max-height: 200px;
-}
-
-footer .footer_column p {
-    padding: 0 30px;
-    text-align: justify;
-    line-height: 25px;
-    font-weight: lighter;
-    margin: 0 20px;
-}
-
-.button {
-    width: 200px;
-    margin: 40px auto;
-    padding: 20px 10px;
-    text-align: center;
-    border-radius: 0px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
-    transition: all 0.3s linear;
-}
-
-.button:hover {
-    background-color: #FEFEFE;
-    color: #C4C4C4;
-    cursor: pointer;
-}
-
-.copyright {
-    text-align: center;
-    padding: 20px;
-    background-color: #717070;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    border-top: 2px solid #FFFFFF;
-}
-
-.footer_banner {
-    background-color: #B3B3B3;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-bottom: 0;
+Feel free to navigate and appreciate this surface-level journey through my skills, exploring the practical applications showcased within the installation guides and beyond.</p>
     
+	  
+	<div class="text_column"> 
+    <h2>Step-by-Step Guide for Installing WSL:</h2>
+
+	  <h3>1.Open PowerShell as an Administrator:</h3>
+      <p>Before initiating the installation, it's crucial to open PowerShell with administrative privileges.<br>
+	 <p>Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
+		
+		<h3>2. Enable WSL Feature:</h3>
+		<p>Execute the following command in PowerShell to enable the Virtual Machine Platform feature:</p>
+<div class="code-block">
+     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+	</div>
+
+		<h3>3. Enable Virtual Machine Platform:</h3>
+		<p>Run the command to enable the Virtual Machine Platform feature:</p>
+<div class="code-block">
+     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+    </div>
+		<p><a href="javascript:(function(){var title=document.title;var url=window.location.href;if(document.all){window.external.AddFavorite(url,title);}else if(window.sidebar){window.sidebar.addPanel(title,url,'');}else{alert("To bookmark this page, press 'Ctrl + D' on your keyboard.");}})();" title="Bookmark This Page Now"><img src="bookmark1.png" width="100" height="100" alt=""/></a></p>
+		     
+		<h3>4. Restart Your Machine:</h3>
+		<p>Restart your computer to apply the changes made to the system.</p>
+
+		<h3>5. Download WSL Kernel Update Package:</h3>
+    <p>Visit the [WSL Kernel Update Package page]<a href="https://aka.ms/wsl2kernel">https://aka.ms/wsl2kernel</a> and download the package suitable for your system architecture.</p>
+
+		<h3>6. Install WSL Kernel Update Package:</h3>
+	<p>Execute the downloaded installer to install the WSL kernel update.</p>
+
+		<h3>7. Set WSL Version to 2:</h3>
+		<p>In PowerShell, set WSL to use version 2 with the following command:</p>
+<div class="code-block">
+     wsl --set-version Distro 2
+    </div>
+		<p>Replace `Distro` with the name of your preferred Linux distribution (e.g., Ubuntu).</p>
+
+<h3>8. Install a Linux Distribution:</h3>
+   <p>Visit the Microsoft Store and search for your preferred Linux distribution (e.g., Ubuntu, Debian, Fedora).<br>
+	   Click on the distribution, then select "Install."</p>
+
+<h3>9. Initialize Your Linux Distribution:</h3>
+    <p>After installation, launch the distribution from the Start menu.<br>
+		Set up a new user account and password for your Linux environment.</p>
+
+	  <h3>10. Explore WSL:</h3>
+   <p>Once installed and initialized, you can start using WSL to run Linux commands, install packages, and even set it <br> as your default shell. </p>
+
+
+<p>By following these steps, you've successfully installed WSL on your Windows machine. This integration allows you to seamlessly work with Linux tools and utilities directly within your Windows environment, providing a powerful and flexible development environment. Explore the capabilities of WSL to enhance your cross-platform development experience.</p>
+<h2>Prerequisites:</h2>
+    <ul>
+        <li>Windows 10 or later.</li>
+        <li>WSL installed and configured on your system.</li>
+        <li>Git installed within your WSL distribution.</li>
+    </ul>
+
+	  <h3>Steps:</h3>
+	  <h2>Step 1: Open WSL Terminal</h2>
+	  <p>Open the WSL terminal by searching for "WSL" or selecting it from the Start menu.</p>
+
+	  <h2>Step 2: Navigate to Desired Directory</h2>
+   <p>Use the `cd` command to navigate to the directory where you want to clone the GitHub repository.</p>
+<div class="code-block">
+    cd /mnt/c/Users/YourUsername/Projects
+    </div>    
+	  <p>Replace `YourUsername` with your Windows username.</p>
+
+	  <h2>Step 3: Clone the Repository</h2>
+   <p>Visit the GitHub repository you want to clone in your web browser.<br>
+   Click on the "Code" button, and copy the repository URL (HTTPS or SSH).<br>
+    In your WSL terminal, use the `git clone` command to clone the repository.</p>
+<div class="code-block">
+		 git clone https://github.com/cychotronik/MS-Questionnaire.git</div>
+
+		 <p>Step 4: Navigate to Cloned Repository</p>
+           Move into the newly cloned repository using the `cd` command.<br>
+<div class="code-block">
+    cd MS-Questionnaire
+    </div>    
+    
+    
+
+		 <h2>Step 5: Verify the Cloning</h2>
+   <p>Confirm that the cloning was successful by listing the files in the repository.
+<div class="code-block">
+		 ls</div>
+	  <p>You should see the files and folders from the cloned repository.</p>
+
+<h2>6: Configure Git (If Necessary)</h2>
+   <p>If this is your first time using Git on WSL, configure your name and email.<br>
+<div class="code-block">
+		  git config --global user.name "Your Name"
+     git config --global user.email "your.email@example.com"</div>
+	  
+	  
+
+	  <h2>Step 7: Done!</h2>
+   <p>You've successfully cloned a GitHub repository using WSL. You can now work with the repository and make changes as needed.</p>
+<p>
+Using WSL to clone GitHub repositories allows you to seamlessly integrate Linux-based development tools into your Windows environment. This tutorial should help you get started with the process. Feel free to explore more Git commands and WSL functionalities to enhance your development workflow.</p>
+ 
+	  <p class="text_column">
+	
+  
+<!-- Main Container Ends -->
+</body>
+</html>
