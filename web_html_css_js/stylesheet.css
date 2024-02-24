@@ -2,6 +2,7 @@
 
 /* Body */
 body {
+	padding-left: 80px;
     font-family: 'source-sans-pro', sans-serif;
     background-color: #36454A;
     margin: 0;
@@ -11,8 +12,8 @@ body {
 
 /* Container */
 .container {
-    width: 70%;
-    margin: 0 auto;
+	width: 100%;
+   text-align: left;
     height: 1000px;
     background-color: #a2cda3;
 }
@@ -43,14 +44,22 @@ header {
     font-weight: lighter;
 	font-size: 12px;
 	text-align: top; 
-    text-align: left;
+    text-align: right;
     width: 70%;
-    float: left;
-    margin: 10px 0 0 0;
-	padding-left: 20px;
+    float: right;
+    margin: 10px 10px 0 0;
     letter-spacing: 0px;
 }
 
+.introbox {
+	font-size: 12px;
+	align-content: center;
+	background-color: #333; 
+	padding: 2px 10px 2px 20px; 
+	border: .25px solid #fff; 
+	border-radius: 10px
+    
+}
     .interactive-button {
 		border-radius: 3px;
         padding: 10px 20px;
@@ -88,8 +97,8 @@ header {
 	color: #fff;
     font-weight: bold;
     text-align: left;
-    float: left;
-	padding-left: 10px;
+    float: center;
+	padding-left: 35px;
     letter-spacing: 0px;
 }
 
@@ -165,7 +174,7 @@ ul li:hover a {
     text-align: left;
     font-weight: lighter;
     line-height: 25px;
-    float: center;
+
     margin-left: 45px;
 	padding: 20px;
     color: #d3d3d3;
@@ -185,14 +194,15 @@ ul li:hover a {
   cursor: pointer;
 }
 .about {
-    padding: 0;
+	
+    padding: 0px 0px 0px 25px;
     display: inline-block;
     background-color: #181A1C;
 }
 
 .steps {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 /* Stats Gallery */
@@ -208,26 +218,6 @@ ul li:hover a {
     background-color: #FFFFFF;
     padding: 20px;
     margin: 20 0 0;
-}
-
-.body2_column {
-    width: 29%;
-    text-align: left;
-    font-weight: lighter;
-    line-height: 25px;
-    float: left;
-    padding: 20 0 0 10;
-    color: #A3A3A3;
-}
-
-.body2_right_column {
-    width: 80%;
-    text-align: left;
-    font-weight: lighter;
-    line-height: 25px;
-    float: left;
-    padding: 20 10px 1px;
-    color: #A3A3A3;
 }
 
 .code-block {
@@ -342,4 +332,74 @@ footer .footer_column p {
     letter-spacing: 2px;
     border-top: 2px solid #FFFFFF;
 }
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 30px;
+}
 
+.sidebar h2 {
+    color: #818181;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.content {
+    margin-left: 130px;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the sidebar and content stack on top of each other */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+#scene-container {
+	border: medium hsla(359,100%,52%,1.00);
+	align-content: center;
+	padding-left: 20px;
+            width: 100px;
+            height: 100px;
+        }
