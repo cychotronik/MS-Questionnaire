@@ -36,7 +36,7 @@ header {
         margin: 50px auto;
     }
 .logo {
-    color: #fff;
+    color: hsla(0,0%,0%,0.71);
     font-weight: bold;
     text-align: left;
     width: 70%;
@@ -45,6 +45,24 @@ header {
 	padding-left: 20px;
     letter-spacing: 0px;
 }
+
+    .interactive-button {
+		border-radius: 3px;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 2px;
+        transition-duration: 0.4s;
+    }
+
+    .interactive-button:hover {
+        background-color: #45a049;
+    }
 .intro {
 	color: #fff;
     font-weight: bold;
@@ -87,7 +105,7 @@ ul li:hover a {
 }
 
 .hero_header {
-    color: #FFFFFF;
+    color: hsla(0,0%,100%,0.47);
     text-align: center;
     margin: 0 0 0 0;
     letter-spacing: 4px;
@@ -113,7 +131,7 @@ ul li:hover a {
 .tagline {
     text-align: center;
     padding-left: 10px;
-    color: #FFFFFF;
+    color: #2d2f30;
     margin: 4px 0 0;
     font-weight: lighter;
     text-transform: uppercase;
