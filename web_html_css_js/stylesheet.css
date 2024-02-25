@@ -1,24 +1,20 @@
 @charset "UTF-8";
-@import url("webfonts/AGENCYB/stylesheet.css");
-
 
 /* Body */
 body {
-
-	padding-left: 080px;
+    padding-left: 080px;
     font-family: 'source-sans-pro', sans-serif;
     background-color: #36454A;
     margin: 0px;
-	font-style: normal;
-    font-weight: 200;
+    font-style: normal;
+    font-weight: lighter;
 }
 
 /* Container */
 .container {
-	width: 100%;
-   text-align: left;
+    width: 100%;
     height: auto;
-    background-color: #a2cda3;
+    background-color: rgba(22,24,27,1.00);
 	
 }
 
@@ -37,14 +33,19 @@ header {
 .social {
 	align-content: flex-end;
 }
-.inner-shadow {
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-        background: radial-gradient(circle, #fff, #ddd);
-        box-shadow: inset 0 0 10px #000;
-        margin: 50px auto;
-    }
+/* app.component.css */
+.sliding-box {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  left: -300px;
+  transition: left 0.5s ease-in-out;
+}
+
+.sliding-box:hover {
+  left: 0;
+}
 .logo {
 	width: 100%;
     color: hsla(0,0%,0%,0.71);
@@ -56,14 +57,41 @@ header {
 	
 
 }
+ /* Add your styling for the modal here */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20%;
+            background-color: #484848;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .modal-content {
+            background-color: #4F535C;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
 .introbox {
     width: 80%;
     font-size: 12px;
     align-content: center;
-    background-color: rgba(37,40,37,1.00);
-    padding: 2px 10px 2px 20px;
-    border: .25px solid #A2CDA3;
+    background-color: #333;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-bottom: 1px;
+    border: .25px solid #fff;
     border-radius: 10px
     
 }
@@ -138,7 +166,7 @@ ul li a {
 }
 
 ul li:hover a {
-    color: #A2CDA3;
+    color: #ffc000;
 }
 
 .hero_header {
@@ -183,13 +211,11 @@ ul li:hover a {
 
 /* About Section */
 .text_column {
- 
-    text-align: left;
     font-weight: lighter;
-    line-height: 25px;
-    margin-left: 5px;
-	padding: 0px 0px 0px px;
-    color: #d3d3d3;
+    margin-left: 4px;
+    padding: 0px 0px 0px px;
+    color: #EAEAEA;
+    /* [disabled]margin-right: -4px; */
 }
 
 .copy-btn {
@@ -206,8 +232,10 @@ ul li:hover a {
   cursor: pointer;
 }
 .about {
-	
-    padding: 0px 0px 0px 25px;
+    padding-top: 14px;
+    padding-right: 0px;
+    padding-left: 18px;
+    padding-bottom: 0px;
     display: inline-block;
     background-color: #181A1C;
 }
@@ -362,8 +390,10 @@ footer .footer_column p {
 
 .sidebar ul {
     list-style: none;
+    padding-top: 1px;
+    padding-right: 2px;
+    padding-bottom: 1px;
     text-align: center;
-    padding-left: 0px;
 }
 
 .sidebar ul li {
@@ -374,20 +404,24 @@ footer .footer_column p {
 .sidebar a {
     text-decoration: none;
     font-size: 16px;
-    color: #A2CDA3;
+    color: #818181;
     display: block;
-    transition: 2.90s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    color: #00C3FF;
 }
 
 .content {
-	margin-top: 45px;
-    margin-left: 130px;
-    padding: 20px;
+    margin-top: 57px;
+    margin-left: 151px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the sidebar and content stack on top of each other */
@@ -412,9 +446,8 @@ footer .footer_column p {
 }
 #scene-container {
     align-content: center;
-    padding-left: 30px;
+    padding-left: 15px;
     width: 100px;
     height: 100px;
-    padding-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
         }

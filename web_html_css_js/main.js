@@ -28,7 +28,10 @@ const vertices = [
 geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
 
 // Create diamond material
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000, wireframe: true });
+const material = new THREE.MeshBasicMaterial({ color: 0xccffcc, wireframe: true });
+
+// Change the color to lime green
+material.color.set(0xff3300);
 
 // Create diamond mesh
 const diamond = new THREE.Mesh(geometry, material);
