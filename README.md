@@ -58,4 +58,3 @@ We welcome any and all contributions! Here are some ways you can get started:
 4. Commit and push
 5. Wait for pull request to be merged
 
-6. This is private.
