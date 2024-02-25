@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Code</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <div class="logo"><a href="https://github.com/cychotronik/MS-Questionnaire/tree/coding_Samples?files=1"><img src="git.png" alt="" width="25px"/></a></div>
+    </a>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">CODE <span class="light">SAMPLES</span></h2>
+    <p class="tagline">Technical Writing, Design, Web Development, and Scripting</p>
+  </section>
+  <!-- About Section -->
+	
+ <section class="about" id="about">
+    <h2 class="intro">Introduction</h2>
+    <p>-</p>
+    <div style="align-content: center; width: 70%; background-color: #333; padding: 10px; border: .25px solid #fff; border-radius: 10px;">
+        <p style="color: #fff;">
+            Explore my digital realm—a showcase introducing my versatile skills in technical writing, design, web development, and basic scripting. The website provides a glimpse into my proficiency through step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in minimalist and intricate design, along with web development capabilities, showcasing the fusion of aesthetics and functionality. This teaser maintains a superficial layer, encouraging envisioning the depth and creativity possible in extensive projects.
+        </p>
+    </div>
+    <div class="text_column">
+        <h2>Step-by-Step Guide for Installing WSL:</h2>
+        <h3>1.Open PowerShell as an Administrator:</h3>
+        <button class="interactive-button" onclick="displayInstructions()">Search for PowerShell</button>
+        <!-- JavaScript function for displaying instructions -->
+        <script>
+            function displayInstructions() {
+                alert("Search for PowerShell:\n\n1. Press the Windows key on your keyboard to open the Start menu.\n2. Type 'PowerShell' into the search bar.\n3. Locate PowerShell: You will see 'Windows PowerShell' or 'PowerShell' in the search results. Right-click on it to open the context menu.\n4. Run as Administrator: In the context menu, you'll see an option that says 'Run as administrator.' Click on 'Run as administrator' to launch PowerShell with elevated privileges.\n5. User Account Control (UAC) Prompt: When you choose to run PowerShell as an administrator, the User Account Control (UAC) prompt may appear. If prompted, click 'Yes' to allow the program to make changes to your system.\n6. Administrator Prompt: Once successfully launched, the PowerShell window will have 'Administrator' in the title bar, indicating that it has elevated privileges. You will also notice that the prompt in the PowerShell window ends with >, while an elevated prompt ends with #.");
+            }
+        </script>
+        <p>Before initiating the installation, it's crucial to open PowerShell with administrative privileges.<br>
+            <p>Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
+        <h3>2. Enable WSL Feature:</h3>
+        <p>Execute the following command in PowerShell to enable the Virtual Machine Platform feature:</p>
+        <div class="code-block">
+            dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+        </div>
+        <h3>3. Enable Virtual Machine Platform:</h3>
+        <p>Run the command to enable the Virtual Machine Platform feature:</p>
+        <div class="code-block">
+            dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+        </div>
+        <p><a href="javascript:(function(){var title=document.title;var url=window.location.href;if(document.all){window.external.AddFavorite(url,title);}else if(window.sidebar){window.sidebar.addPanel(title,url,'');}else{alert("To bookmark this page, press 'Ctrl + D' on your keyboard.");}})();" title="Bookmark This Page Now" /><img src="bookmark1.png" width="50" height="50" alt="" /></a></p>
+        <p>Restart your computer to apply the changes made to the system.</p>
+       <h3>5. Download WSL Kernel Update Package:</h3>
+    <p>Visit the [WSL Kernel Update Package page]<a href="https://aka.ms/wsl2kernel">https://aka.ms/wsl2kernel</a> and download the package suitable for your system architecture.</p>
+
+		<h3>6. Install WSL Kernel Update Package:</h3>
+	<p>Execute the downloaded installer to install the WSL kernel update.</p>
+
+		<h3>7. Set WSL Version to 2:</h3>
+		<p>In PowerShell, set WSL to use version 2 with the following command:</p>
+<div class="code-block">
+     wsl --set-version Distro 2
+    </div>
+		<p>Replace `Distro` with the name of your preferred Linux distribution (e.g., Ubuntu).</p>
+
+<h3>8. Install a Linux Distribution:</h3>
+   <p>Visit the Microsoft Store and search for your preferred Linux distribution (e.g., Ubuntu, Debian, Fedora).<br>
+	   Click on the distribution, then select "Install."</p>
+
+<h3>9. Initialize Your Linux Distribution:</h3>
+    <p>After installation, launch the distribution from the Start menu.<br>
+		Set up a new user account and password for your Linux environment.</p>
+
+	  <h3>10. Explore WSL:</h3>
+   <p>Once installed and initialized, you can start using WSL to run Linux commands, install packages, and even set it <br> as your default shell. </p>
+
+
+<p>By following these steps, you've successfully installed WSL on your Windows machine. This integration allows you to seamlessly work with Linux tools and utilities directly within your Windows environment, providing a powerful and flexible development environment. Explore the capabilities of WSL to enhance your cross-platform development experience.</p>
+<h2>Prerequisites:</h2>
+    <ul>
+        <li>Windows 10 or later.</li>
+        <li>WSL installed and configured on your system.</li>
+        <li>Git installed within your WSL distribution.</li>
+    </ul>
+
+	  <h3>Steps:</h3>
+	  <h2>Step 1: Open WSL Terminal</h2>
+	  <p>Open the WSL terminal by searching for "WSL" or selecting it from the Start menu.</p>
+
+	  <h2>Step 2: Navigate to Desired Directory</h2>
+   <p>Use the `cd` command to navigate to the directory where you want to clone the GitHub repository.</p>
+<div class="code-block">
+    cd /mnt/c/Users/YourUsername/Projects
+    </div>    
+	  <p>Replace `YourUsername` with your Windows username.</p>
+
+	  <h2>Step 3: Clone the Repository</h2>
+   <p>Visit the GitHub repository you want to clone in your web browser.<br>
+   Click on the "Code" button, and copy the repository URL (HTTPS or SSH).<br>
+    In your WSL terminal, use the `git clone` command to clone the repository.</p>
+<div class="code-block">
+		 git clone https://github.com/cychotronik/MS-Questionnaire.git</div>
+
+		 <p>Step 4: Navigate to Cloned Repository</p>
+           Move into the newly cloned repository using the `cd` command.<br>
+<div class="code-block">
+    cd MS-Questionnaire
+    </div>    
+    
+    
+
+		 <h2>Step 5: Verify the Cloning</h2>
+   <p>Confirm that the cloning was successful by listing the files in the repository.
+<div class="code-block">
+		 ls</div>
+	  <p>You should see the files and folders from the cloned repository.</p>
+
+<h2>6: Configure Git (If Necessary)</h2>
+   <p>If this is your first time using Git on WSL, configure your name and email.<br>
+<div class="code-block">
+		  git config --global user.name "Your Name"
+     git config --global user.email "your.email@example.com"</div>
+	  
+	  
+
+	  <h2>Step 7: Done!</h2>
+   <p>You've successfully cloned a GitHub repository using WSL. You can now work with the repository and make changes as needed.</p>
+	<p>
+Using WSL to clone GitHub repositories allows you to seamlessly integrate Linux-based development tools into your Windows environment. This tutorial should help you get started with the process. Feel free to explore more Git commands and WSL functionalities to enhance your development workflow.</p>
+	
+	<h3>Automation: Powershell Script</h3>
+	<a href="https://userweb.mvdsl.com/~katydid/ryan/wslgit.ps1" download>
+    <button>Download File</button>
+</a>
+	<p>The script installs WSL and clones my github repository.</p>
+    </div>
+</section>

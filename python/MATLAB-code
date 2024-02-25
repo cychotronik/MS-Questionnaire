@@ -1,0 +1,12 @@
+% Generate a flat frequency response
+numPoints = 100;
+numFrequencies = 50;
+frequencyResponse = ones(numPoints, numFrequencies);
+
+% Create a waterfall plot
+figure;
+waterfall(frequencyResponse);
+xlabel('Time');
+ylabel('Frequency');
+zlabel('Amplitude');
+title('Waterfall Plot of Flat Frequency Response');
