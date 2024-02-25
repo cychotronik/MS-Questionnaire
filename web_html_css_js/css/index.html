@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan's Profile</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script type="module" src="main.js"></script>
+    <script>var __adobewebfontsappname__="dreamweaver"</script>
+    <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Navigation -->
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="logo"></div>
+            <a href="https://github.com/cychotronik/MS-Questionnaire/tree/coding_Samples?files=1">
+                <img src="git.png" alt="" width="25px" />
+            </a>
+            <a href="https://www.linkedin.com/in/ryan-rangel-201b88235">
+                <img src="linkedin.png" alt="" width="25px" />
+            </a>
+        </section>
+ <!-- About Section -->
+        <section class="about" id="about">
+            <div class="sidebar">
+                <div id="scene-container"></div>
+                <ul>
+                    <br>
+                    <li><a href="#section1">Introduction</a></li>
+                    <li><a href="#section2">WSL Install</a></li>
+                    <li><a href="#section3">GitHub Cloning</a></li>
+                    <li><a href="#section4">Automation</a></li>
+                    <li><a href="#section5">Web Browser JavaFX</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <!-- Section 1: Introduction -->
+                <div id="section1">
+                    <div class="introbox">
+                        <p style="color: #fff;">
+                            Explore my digital realm—a showcase introducing my versatile skills in technical writing, design,
+                            web development, and basic scripting. The website provides a glimpse into my proficiency through
+                            step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in
+                            minimalist and intricate design, along with web development capabilities, showcasing the fusion of
+                            aesthetics and functionality. This teaser maintains a superficial layer, encouraging envisioning the
+                            depth and creativity possible in extensive projects.
+                        </p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Section 2: WSL Install -->
+                <div id="section2">
+                    <div class="text_column">
+        <h2>Step-by-Step Guide for Installing WSL:</h2>
+        <h3>1. Open PowerShell as an Administrator:</h3>
+        <button class="interactive-button" onclick="displayInstructions()">Search for PowerShell</button>
+        <!-- JavaScript function for displaying instructions -->
+        <script>
+            function displayInstructions() {
+                alert("Search for PowerShell:\n\n1. Press the Windows key on your keyboard to open the Start menu.\n2. Type 'PowerShell' into the search bar.\n3. Locate PowerShell: You will see 'Windows PowerShell' or 'PowerShell' in the search results. Right-click on it to open the context menu.\n4. Run as Administrator: In the context menu, you'll see an option that says 'Run as administrator.' Click on 'Run as administrator' to launch PowerShell with elevated privileges.\n5. User Account Control (UAC) Prompt: When you choose to run PowerShell as an administrator, the User Account Control (UAC) prompt may appear. If prompted, click 'Yes' to allow the program to make changes to your system.\n6. Administrator Prompt: Once successfully launched, the PowerShell window will have 'Administrator' in the title bar, indicating that it has elevated privileges. You will also notice that the prompt in the PowerShell window ends with >, while an elevated prompt ends with #.");
+            }
+        </script>
+        <p>Before initiating the installation, it's crucial to open PowerShell with administrative privileges.<br>
+            Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
+        <h3>2. Enable WSL Feature:</h3>
+        <p>Execute the following command in PowerShell to enable the Virtual Machine Platform feature:</p>
+        <div class="code-block">
+            dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+        </div>
+        <h3>3. Enable Virtual Machine Platform:</h3>
+        <p>Run the command to enable the Virtual Machine Platform feature:</p>
+        <div class="code-block">
+            dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+        </div>
+        <p><a href="javascript:(function(){var title=document.title;var url=window.location.href;if(document.all){window.external.AddFavorite(url,title);}else if(window.sidebar){window.sidebar.addPanel(title,url,'');}else{alert("To bookmark this page, press 'Ctrl + D' on your keyboard.");}})();" title="Bookmark This Page Now" /><img src="bookmark1.png" width="50" height="50" alt="" /></a></p>
+        <p>Restart your computer to apply the changes made to the system.</p>
+       <h3>5. Download WSL Kernel Update Package:</h3>
+    <p>Visit the [WSL Kernel Update Package page]<a href="https://aka.ms/wsl2kernel">https://aka.ms/wsl2kernel</a> and download the package suitable for your system architecture.</p>
+
+		<h3>6. Install WSL Kernel Update Package:</h3>
+	<p>Execute the downloaded installer to install the WSL kernel update.</p>
+
+		<h3>7. Set WSL Version to 2:</h3>
+		<p>In PowerShell, set WSL to use version 2 with the following command:</p>
+<div class="code-block">
+     wsl --set-version Distro 2
+    </div>
+		<p>Replace `Distro` with the name of your preferred Linux distribution (e.g., Ubuntu).</p>
+
+<h3>8. Install a Linux Distribution:</h3>
+   <p>Visit the Microsoft Store and search for your preferred Linux distribution (e.g., Ubuntu, Debian, Fedora).<br>
+	   Click on the distribution, then select "Install."</p>
+
+<h3>9. Initialize Your Linux Distribution:</h3>
+    <p>After installation, launch the distribution from the Start menu.<br>
+		Set up a new user account and password for your Linux environment.</p>
+
+	  <h3>10. Explore WSL:</h3>
+   <p>Once installed and initialized, you can start using WSL to run Linux commands, install packages, and even set it <br> as your default shell. </p>
+
+
+<p>By following these steps, you've successfully installed WSL on your Windows machine. This integration allows you to seamlessly work with Linux tools and utilities directly within your Windows environment, providing a powerful and flexible development environment. Explore the capabilities of WSL to enhance your cross-platform development experience.</p>
+<h2>Prerequisites:</h2>
+    <ul>
+        <li>Windows 10 or later.</li>
+        <li>WSL installed and configured on your system.</li>
+        <li>Git installed within your WSL distribution.</li>
+    </ul>
+         </div>
+                </div>
+
+        <!-- Section 3: GitHub Cloning -->
+                <div id="section3">
+                    <div class="text_column">
+   	  <h3>Steps:</h3>
+	  <h2>Step 1: Open WSL Terminal</h2>
+	  <p>Open the WSL terminal by searching for "WSL" or selecting it from the Start menu.</p>
+
+	  <h2>Step 2: Navigate to Desired Directory</h2>
+   <p>Use the `cd` command to navigate to the directory where you want to clone the GitHub repository.</p>
+<div class="code-block">
+    cd /mnt/c/Users/YourUsername/Projects
+    </div>    
+	  <p>Replace `YourUsername` with your Windows username.</p>
+
+	  <h2>Step 3: Clone the Repository</h2>
+   <p>Visit the GitHub repository you want to clone in your web browser.<br>
+   Click on the "Code" button, and copy the repository URL (HTTPS or SSH).<br>
+    In your WSL terminal, use the `git clone` command to clone the repository.</p>
+<div class="code-block">
+		 git clone https://github.com/cychotronik/MS-Questionnaire.git</div>
+
+		 <p>Step 4: Navigate to Cloned Repository</p>
+           Move into the newly cloned repository using the `cd` command.<br>
+<div class="code-block">
+    cd MS-Questionnaire
+    </div>    
+    
+    
+			
+<div class="code-block">
+		 ls</div>
+	  <p>You should see the files and folders from the cloned repository.</p>
+
+<h2>6: Configure Git (If Necessary)</h2>
+			<p>If this is your first time using Git on WSL, configure your name and email.</p>
+<div class="code-block">
+		  git config --global user.name "Your Name"
+     git config --global user.email "your.email@example.com"</div>
+	  
+	  
+
+	  <h2>Step 7: Done!</h2>
+   <p>You've successfully cloned a GitHub repository using WSL. You can now work with the repository and make changes as needed.</p>
+	<p>
+Using WSL to clone GitHub repositories allows you to seamlessly integrate Linux-based development tools into your Windows environment. This tutorial should help you get started with the process. Feel free to explore more Git commands and WSL functionalities to enhance your development workflow.</p>
+	 <!-- Section 4: Automation -->
+                <div id="section4">
+                    <h3>Automation: Powershell Script</h3>
+                    <a href="https://userweb.mvdsl.com/~katydid/ryan/wslgit.ps1" download>
+                        <button>Download File</button>
+                    </a>
+                    <p>The script installs WSL and clones my GitHub repository.</p>
+					 </div>
+      
+    
+    
+
+
+ <!-- Section 5: Web Browser JavaFX -->
+                <div id="section5">
+                    <p>In this tutorial, we'll walk through the code for a simple web browser using JavaFX. This basic web
+                        browser allows users to navigate to different URLs, go back and forth in their browsing history, and
+                        see the current URL in a text field. This tutorial assumes that you have a basic understanding of
+                        Java and JavaFX.</p>
+
+                    <h2>Prerequisites</h2>
+                    <p>Java Development Kit (JDK) installed on your machine.</p>
+                    <p>A basic understanding of Java and JavaFX.</p>
+		<h2>Step 1: Set Up Your Project</h2>
+<p>Start by creating a new Java project in your preferred IDE. Make sure to set up a JavaFX project and configure your build path to include the necessary JavaFX libraries.</p>
+
+		<h2>Step 2: Create the SimpleBrowser Class</h2>
+		<p>Copy and paste the provided code into a new Java class named SimpleBrowser.</p>
+		<div class="code-block">
+	
+import javafx.application.Application;<br>
+import javafx.concurrent.Worker;<br>
+import javafx.scene.Scene;<br>
+import javafx.scene.control.*;<br>
+import javafx.scene.layout.BorderPane;<br>
+import javafx.scene.web.WebEngine;<br>
+import javafx.scene.web.WebView;<br>
+import javafx.stage.Stage;<br>
+<br>
+public class SimpleBrowser extends Application {<br>
+<br>
+    public static void main(String[] args) {<br>
+        launch(args);<br>
+    }<br>
+
+    @Override<br>
+    public void start(Stage primaryStage) {<br>
+        // Create WebView<br>
+        WebView webView = new WebView();<br>
+        WebEngine webEngine = webView.getEngine();<br>
+
+        // Create navigation bar<br>
+        TextField urlField = new TextField();<br>
+        Button goButton = new Button("Go");<br>
+        Button backButton = new Button("Back");<br>
+        Button forwardButton = new Button("Forward");<br>
+<br>
+        // Set up event handlers <br>
+        goButton.setOnAction(e -> loadURL(webEngine, urlField.getText()));<br>
+        backButton.setOnAction(e -> {<br>
+            if (webEngine.getHistory().getCurrentIndex() > 0) {<br>
+                webEngine.getHistory().go(-1);<br>
+            }<br>
+        });<br>
+        forwardButton.setOnAction(e -> {<br>
+            if (webEngine.getHistory().getCurrentIndex() < webEngine.getHistory().getEntries().size() - 1){<br>
+                webEngine.getHistory().go(1);<br>
+            }<br>
+        });<br>
+<br>
+        // Bind URL field to WebView's location property<br>
+        urlField.textProperty().addListener((observable, oldValue, newValue) -> {<br>
+            if (!newValue.isEmpty() && !newValue.equals(webEngine.getLocation())) {<br>
+                loadURL(webEngine, newValue);<br>
+            }<br>
+        });<br>
+<br>
+        // Bind WebView's location property to URL field<br>
+        webEngine.locationProperty().addListener((observable, oldValue, newValue) -> {<br>
+            urlField.setText(newValue);<br>
+        });<br>
+<br>
+        // Create layout<br>
+        BorderPane root = new BorderPane();<br>
+        root.setTop(new ToolBar(urlField, goButton, backButton, forwardButton));<br>
+        root.setCenter(webView);<br>
+<br>
+        // Create scene<br>
+        Scene scene = new Scene(root, 800, 600);<br>
+<br>
+        // Set up stage<br>
+        primaryStage.setTitle("Simple Browser");<br>
+        primaryStage.setScene(scene);<br>
+        primaryStage.show();<br>
+    }<br>
+<br>
+    private void loadURL(WebEngine engine, String url) {<br>
+        if (!url.startsWith("http://") && !url.startsWith("https://")) {<br>
+            url = "http://" + url;<br>
+        }<br>
+        engine.load(url);<br>
+    }<br>
+}<br>
+			</p>
+
+</div>
+
+
+		<h2>3: Understand the Code</h2>
+		<p>Let's break down the key components of the code:</p>
+
+<p>Imports: The necessary JavaFX and Java libraries are imported.</p>
+
+<p>Main Class and main Method: The SimpleBrowser class extends Application, and the main method is the entry point of the application.</p>
+
+		<p>Start Method: The start method is where the GUI components are initialized.</p>
+
+<p>WebView and WebEngine: The WebView and WebEngine classes from JavaFX are used to display web content.</p>
+
+<p>Navigation Bar Components: The navigation bar includes a TextField for entering URLs, a "Go" button to navigate to the entered URL, and "Back" and "Forward" buttons for navigating through the browsing history.</p>
+
+<p>Event Handlers: Event handlers are set up for the "Go," "Back," and "Forward" buttons to perform the corresponding actions.</p> 
+
+<p>Property Binding: The URL field is bound to the WebView's location property, ensuring that it always displays the current URL.</p>
+
+<p>Layout: A BorderPane layout is used, with the navigation bar at the top and the WebView at the center.</p>
+
+<p>Scene and Stage: The Scene is created with the root layout, and the Stage is set up with the title, scene, and size.</p>
+
+<p>loadURL Method: A helper method to load a URL into the WebEngine. It ensures that the entered URL is prefixed with "http://" if it's not already.</p>
+
+		<h2>Step 4: Run the Application</h2>
+<p>Run the SimpleBrowser class. You should see a simple web browser window with a navigation bar at the top. Enter URLs, navigate back and forth, and observe how the URL field updates dynamically.</p>
+
+<h2>Conclusion</h2>
+<p>This tutorial provides a basic example of creating a simple web browser using JavaFX. While this example is minimalistic, it serves as a foundation that you can build upon to add more features and improve the user experience. Consider enhancing the browser by adding features like bookmarks, tabs, or improving the overall look and feel of the application.</p>
+	</div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
