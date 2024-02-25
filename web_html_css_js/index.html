@@ -4,8 +4,23 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sample Code</title>
+<title>Ryan's Profile </title>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,700" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/angular.css">
+  <link href="webfonts/CONTF/stylesheet.css" rel="stylesheet" type="text/css">
+<base >
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script id="angularScript"
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
 	<script type="module" src="main.js"></script>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -18,40 +33,83 @@
     <![endif]-->
 </head>
 <body>
+	<color-profile>
+	<div class="container"> 
+	<body ng-controller="AppController" class="homepage">
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="https://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
+<header class="header">
+    <nav id="navbar-main" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <h1 class="brand"><a href="https://github.com/cychotronik/MS-Questionnaire/"><img src="git.png" alt="" width="25px"/><img src="linkedin.png" alt="" width="25px"/>
+			  </a></h1>
+			<h1 class="brand"><a href="https://www.linkedin.com/in/ryan-rangel-201b88235/">
+			  </a></h1>
+
+
+          <ul class="nav">
+            <li class="dropdown" uib-dropdown>
+              <a href="#" class="dropdown-toggle" uib-dropdown-toggle>Bio</a>
+              <ul class="dropdown-menu" uib-dropdown-menu>
+                <li><a href="">Early Life</a></li>
+                <li><a href="">Design</a></li>
+                <li><a href="">Journalism</a></li>
+                <li><a href="">Technology</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" uib-dropdown>
+              <a href="#" class="dropdown-toggle" uib-dropdown-toggle>Contact</a>
+              <ul class="dropdown-menu" uib-dropdown-menu>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Call</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <nav id="navbar-notice" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <p class="site-notice">
+          </p>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 <!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="">
-    <div class="logo"><a href="https://github.com/cychotronik/MS-Questionnaire/tree/coding_Samples?files=1"><img src="git.png" alt="" width="25px"/></a>&nbsp;&nbsp;<a href="https://githuhttps://www.linkedin.com/in/ryan-rangel-201b88235"><img src="linkedin.jpg" alt="" width="25px"/></a></div>
-    </a>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h2 class="hero_header">CODE <span class="light">SAMPLES</span></h2>
-    <p class="tagline">Technical Writing, Design, Web Development, and Scripting</p>
-  </section>
-  <!-- About Section -->
+
+	<!--- Top Banner --->
+<!-- About Section -->
 	  
  <section class="about" id="about">
 	  <div class="sidebar">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#section1">Introduction</a></li>
-            <li><a href="#section2">WSL Installation</a></li>
-            <li><a href="#section3">Github Cloning</a></li>
+	    <div id="scene-container"></div>
+<ul>
+		<br>
+            <li><a href="#section1">
+            WSL Install</a></li>
+            <li><a href="#section2">Github Cloning</a></li>
+            <li><a href="#section3">Automation</a></li>
+			<li><a href="#section4">Python</a></li>
             <!-- Add more sections as needed -->
-			<div id="scene-container"></div>
+			<li><a herf="#section5">Web Browser JavaFX</a></li>
         </ul>
     </div>
 
     <div class="content">
         <div id="section1">
-             <h2 class="intro">Introduction</h2>
     <div class="introbox">
-        <p style="color: #fff;">
-            Explore my digital realm—a showcase introducing my versatile skills in technical writing, design, web development, and basic scripting. The website provides a glimpse into my proficiency through step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in minimalist and intricate design, along with web development capabilities, showcasing the fusion of aesthetics and functionality. This teaser maintains a superficial layer, encouraging envisioning the depth and creativity possible in extensive projects.
-        </p>
+        <p style="color: #ABABAB; font-family: CONTF;">
+            Explore my digital realm—a showcase introducing my versatile skills in technical writing, design, web development, and basic scripting. The website provides a glimpse into my proficiency through step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in minimalist /*
+ and intricate design, along with web development capabilities, showcasing the fusion of aesthetics and functionality. This teaser maintains a superficial layer, encouraging envisioning the depth and creativity possible in extensive projects. </p>
     </div>
         </div>
 
@@ -67,7 +125,7 @@
             }
         </script>
         <p>Before initiating the installation, it's crucial to open PowerShell with administrative privileges.<br>
-            <p>Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
+            Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
         <h3>2. Enable WSL Feature:</h3>
         <p>Execute the following command in PowerShell to enable the Virtual Machine Platform feature:</p>
         <div class="code-block">
@@ -159,15 +217,15 @@
    <p>You've successfully cloned a GitHub repository using WSL. You can now work with the repository and make changes as needed.</p>
 	<p>
 Using WSL to clone GitHub repositories allows you to seamlessly integrate Linux-based development tools into your Windows environment. This tutorial should help you get started with the process. Feel free to explore more Git commands and WSL functionalities to enhance your development workflow.</p>
-	
+	 <div id="section4">
 	<h3>Automation: Powershell Script</h3>
 	<a href="https://userweb.mvdsl.com/~katydid/ryan/wslgit.ps1" download>
-    <button>Download File</button>
+		<button>Download File</button>
 </a>
 	<p>The script installs WSL and clones my github repository.</p>
     </div>
         </div>
-        <!-- Add more sections as needed -->
+        </div>
     </div>
 	</div>
 </section>
