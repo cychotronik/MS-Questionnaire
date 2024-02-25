@@ -6,7 +6,7 @@ Welcome to my collection of coding samples and technical writings! This reposito
 
 The code samples in this repository cover a wide range of programming concepts, languages, and frameworks. They serve as a testament to my ability to write clean, efficient, and well-documented code.
 
-In addition to the code samples, this repository also contains a collection of technical writings. These documents provide detailed explanations of the code, making it easier for others to understand how the code works and how to use it.
+In addition to the code samples, this repository also will contain a collection of technical writings. These documents provide detailed explanations of the code, making it easier for others to understand how the code works and how to use it.
 
 ## Contents
 
