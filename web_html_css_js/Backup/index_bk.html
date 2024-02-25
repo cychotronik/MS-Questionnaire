@@ -4,9 +4,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ryan's Profile </title>
+<title>Sample Code</title>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
-	<script type="module" src="main.js"></script>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
@@ -22,39 +21,28 @@
 <!-- Main Container -->
 <div class="container"> 
   <!-- Navigation -->
+  <header> <a href="">
+    <div class="logo"><a href="https://github.com/cychotronik/MS-Questionnaire/tree/coding_Samples?files=1"><img src="git.png" alt="" width="25px"/></a></div>
+    </a>
+  </header>
   <!-- Hero Section -->
-<section class="hero" id="hero">
-	  <div class="logo"></div><a href="https://github.com/cychotronik/MS-Questionnaire/tree/coding_Samples?files=1"><img src="git.png" alt="" width="25px"/></a>&nbsp;&nbsp;<a href="https://githuhttps://www.linkedin.com/in/ryan-rangel-201b88235"><img src="linkedin.png" alt="" width="25px"/></a></div>
+  <section class="hero" id="hero">
+    <h2 class="hero_header">CODE <span class="light">SAMPLES</span></h2>
+    <p class="tagline">Technical Writing, Design, Web Development, and Scripting</p>
   </section>
   <!-- About Section -->
-	  
+	
  <section class="about" id="about">
-	  <div class="sidebar">
-		  <div id="scene-container"></div>
-        <ul>
-			<br>
-            <li><a href="#section1">Introduction</a></li>
-            <li><a href="#section2">WSL Install</a></li>
-            <li><a href="#section3">GitHub Cloning</a></li>
-			<li><a href="#section4">Automation</a></li>
-            <!-- Add more sections as needed -->
-			<li><a herf="#section5">Web Browser JavaFX</a></li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <div id="section1">
-    <div class="introbox">
+    <h2 class="intro">Introduction</h2>
+    <p>-</p>
+    <div style="align-content: center; width: 70%; background-color: #333; padding: 10px; border: .25px solid #fff; border-radius: 10px;">
         <p style="color: #fff;">
             Explore my digital realm—a showcase introducing my versatile skills in technical writing, design, web development, and basic scripting. The website provides a glimpse into my proficiency through step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in minimalist and intricate design, along with web development capabilities, showcasing the fusion of aesthetics and functionality. This teaser maintains a superficial layer, encouraging envisioning the depth and creativity possible in extensive projects.
         </p>
     </div>
-        </div>
-
-        <div id="section2">
-             <div class="text_column">
+    <div class="text_column">
         <h2>Step-by-Step Guide for Installing WSL:</h2>
-        <h3>1. Open PowerShell as an Administrator:</h3>
+        <h3>1.Open PowerShell as an Administrator:</h3>
         <button class="interactive-button" onclick="displayInstructions()">Search for PowerShell</button>
         <!-- JavaScript function for displaying instructions -->
         <script>
@@ -63,7 +51,7 @@
             }
         </script>
         <p>Before initiating the installation, it's crucial to open PowerShell with administrative privileges.<br>
-            Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
+            <p>Right-click on the Start menu, select "Windows PowerShell (Admin)," and confirm any User Account Control (UAC) prompts.</p>
         <h3>2. Enable WSL Feature:</h3>
         <p>Execute the following command in PowerShell to enable the Virtual Machine Platform feature:</p>
         <div class="code-block">
@@ -108,12 +96,8 @@
         <li>WSL installed and configured on your system.</li>
         <li>Git installed within your WSL distribution.</li>
     </ul>
-		</p>
-        </div>
 
-        <div id="section3">
-            	<div class="text_column">
-   	  <h3>Steps:</h3>
+	  <h3>Steps:</h3>
 	  <h2>Step 1: Open WSL Terminal</h2>
 	  <p>Open the WSL terminal by searching for "WSL" or selecting it from the Start menu.</p>
 
@@ -138,13 +122,15 @@
     </div>    
     
     
-			
+
+		 <h2>Step 5: Verify the Cloning</h2>
+   <p>Confirm that the cloning was successful by listing the files in the repository.
 <div class="code-block">
 		 ls</div>
 	  <p>You should see the files and folders from the cloned repository.</p>
 
 <h2>6: Configure Git (If Necessary)</h2>
-			<p>If this is your first time using Git on WSL, configure your name and email.</p>
+   <p>If this is your first time using Git on WSL, configure your name and email.<br>
 <div class="code-block">
 		  git config --global user.name "Your Name"
      git config --global user.email "your.email@example.com"</div>
@@ -155,18 +141,11 @@
    <p>You've successfully cloned a GitHub repository using WSL. You can now work with the repository and make changes as needed.</p>
 	<p>
 Using WSL to clone GitHub repositories allows you to seamlessly integrate Linux-based development tools into your Windows environment. This tutorial should help you get started with the process. Feel free to explore more Git commands and WSL functionalities to enhance your development workflow.</p>
-	 <div id="section4">
+	
 	<h3>Automation: Powershell Script</h3>
 	<a href="https://userweb.mvdsl.com/~katydid/ryan/wslgit.ps1" download>
-		<button>Download File</button>
+    <button>Download File</button>
 </a>
 	<p>The script installs WSL and clones my github repository.</p>
     </div>
-        </div>
-        </div>
-    </div>
-	</div>
 </section>
-</div>
-	</body>
-</html>
