@@ -18,9 +18,8 @@ const geometry = new THREE.BufferGeometry();
 const vertices = [
     0, 1, 0,   // Top vertex
     1, 0, 0,   // Bottom right vertex
-    -1, 0, 0,  // Bottom left vertex
-
-    0, -1, 0,  // Bottom vertex
+    -1, 0, 0,  // Bottom left vertex	
+    0, -1, 0,   // Bottom vertex
     0, 0, 1,   // Front vertex
     0, 0, -1   // Back vertex
 ];
@@ -53,7 +52,7 @@ window.addEventListener('resize', () => {
     camera.aspect = 1;
     camera.updateProjectionMatrix();
 
-    renderer.setSize(200, 200);
+    renderer.setSize(280, 280);
 });
 
 animate();

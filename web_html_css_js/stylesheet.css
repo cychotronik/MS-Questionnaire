@@ -57,14 +57,13 @@ header {
 	
 
 }
- /* Add your styling for the modal here */
-        .modal {
+     .modal {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 20%;
+            height: 70%;
             background-color: #484848;
             justify-content: center;
             align-items: center;
@@ -72,8 +71,8 @@ header {
 
         .modal-content {
             background-color: #4F535C;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 10px;
+            border-radius: 0px;
         }
 
         .close-btn {
@@ -166,7 +165,7 @@ ul li a {
 }
 
 ul li:hover a {
-    color: #ffc000;
+    color: #74FF00;
 }
 
 .hero_header {
@@ -232,10 +231,10 @@ ul li:hover a {
   cursor: pointer;
 }
 .about {
-    padding-top: 14px;
+
     padding-right: 0px;
     padding-left: 18px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
     display: inline-block;
     background-color: #181A1C;
 }
@@ -251,15 +250,40 @@ ul li:hover a {
     margin-bottom: 5px;
 }
 
-.body2 {
-    clear: both;
-    display: inline-block;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 20px;
-    margin: 20 0 0;
+.code-block-htmlid {
+	width: 13%;
+    font-family: "Courier New", monospace;
+    background-color: #353738;
+    border: 1px solid #232425;border-radius: 5px;
+    border-left: 3px solid #fff200;
+    color: #fff;
+    page-break-inside: avoid;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 7px;
+    display: block;
+    word-wrap: break-word;
 }
-
+.code-block-bashid {
+	width: 13%;
+    font-family: "Courier New", monospace;
+    background-color: #353738;
+    border: 1px solid #232425;border-radius: 5px;
+    border-left: 3px solid #f36d33;
+    color: #fff;
+    page-break-inside: avoid;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 7px;
+    display: block;
+    word-wrap: break-word;
+}
 .code-block {
 	width: 70%;
     font-family: "Courier New", monospace;
@@ -278,6 +302,35 @@ ul li:hover a {
     word-wrap: break-word;
 }
 
+.code-block-html {
+	width: 70%;
+    font-family: "Courier New", monospace;
+    background-color: #353738;
+    border: 1px solid #232425;border-radius: 5px;
+    border-left: 3px solid #fff200;
+    color: #fff;
+    page-break-inside: avoid;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 7px;
+    display: block;
+    word-wrap: break-word;
+}
+.code-block-strip {
+	width: auto;
+    font-family: "Courier New", monospace;
+    background-color: #000;
+    color: #fff;
+    page-break-inside: avoid;
+    font-size: 12px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0.5px;
+    display: block;
+}
 .thumbnail {
     width: 25%;
     text-align: center;
@@ -446,8 +499,9 @@ footer .footer_column p {
 }
 #scene-container {
     align-content: center;
-    padding-left: 15px;
+    padding-left: 14px;
     width: 100px;
     height: 100px;
     padding-bottom: 30px;
+    padding-right: 12px;
         }

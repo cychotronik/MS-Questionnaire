@@ -6,10 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ryan's Profile </title>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
-   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon32.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/img/favicon48.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="/img/favicon180.png">
+   <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,700" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/docs.css">
@@ -93,7 +90,7 @@
   <nav id="navbar-main" class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <h1 class="brand"><a href="https://github.com/cychotronik"><img src="linkedin.png" alt="" width="25px"/><img src="git.png" alt="" width="25px"/></a></h1>
+        <h1 class="brand"><a href="https://github.com/cychotronik"><img src="git.png" alt="" width="25px"/></a></h1>
         <ul class="nav">
           <li class="dropdown" uib-dropdown> <a href="#" class="dropdown-toggle" uib-dropdown-toggle>Bio</a>
             <ul class="dropdown-menu" uib-dropdown-menu>
@@ -128,19 +125,24 @@
       <div id="scene-container"></div>
       <ul>
         <br>
-        <li><a href="#section1"> WSL Install</a></li>
+        <li><a href="#section1">WSL Install</a></li>
         <li><a href="#section2">Github Cloning</a></li>
         <li><a href="#section3">Automation</a></li>
+		<li><a href="#section4">Open Graph Tags</a></li> 
       </ul>
     </div>
     <div class="content">
 
         <div class="introbox">
-          <p style="color: #ABABAB; font-family: CONTF; background: none;"> Explore my digital realm—a showcase introducing my versatile skills in technical writing, design, web development, and basic scripting. The website provides a glimpse into my proficiency through step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in minimalist 
-            and intricate design, along with web development capabilities, showcasing the fusion of aesthetics and functionality. This teaser maintains a superficial layer, encouraging envisioning the depth and creativity possible in extensive projects. </p>
+          <p style="color: #ABABAB; font-family: CONTF; background: none;"> Explore my digital realm—a showcase of Angularjs, Node.js and three.js... introducing my versatile skills in technical writing, design, web development, and scripting. The website provides a glimpse into my proficiency through step-by-step guides, emphasizing clarity and ongoing skills development. Witness my expertise in minimalist 
+            and intricate design, along with web development capabilities, showcasing the fusion of aesthetics and functionality.</p>
+			
         </div>
 		<div id="section1">
   <div class="text_column">
+	  <h3>Language Index:</h3>
+			<div class="code-block-htmlid">html</div><br>
+			<div class="code-block-bashid">Bash/Shell</div>
 <p>
 	  </p>
 
@@ -246,6 +248,7 @@
       <li>Git installed within your WSL distribution.</li>
     </ul>
 		<br>
+			</div>
         <div id="section2">
           <div class="text_column">
             <h3>Steps:</h3>
@@ -272,7 +275,7 @@
             <h2>Step 7: Done!</h2>
             <p>You've successfully cloned a GitHub repository using WSL. You can now work with the repository and make changes as needed.</p>
             <p> Using WSL to clone GitHub repositories allows you to seamlessly integrate Linux-based development tools into your Windows environment. This tutorial should help you get started with the process. Feel free to explore more Git commands and WSL functionalities to enhance your development workflow.</p>
-            <div id="section4">
+            <div id="section3">
               <h3>Automation: Powershell Script</h3>
               <a href="https://userweb.mvdsl.com/~katydid/ryan/wslgit.ps1" download>
                 <button>Download File</button>
@@ -280,9 +283,64 @@
 				<br>
 				<br>
               <p>The script installs WSL and clones my github repository.</p>
-				
-				<div id="section3"></div>
-				<!-- app.component.html -->
+			  </div>
+				<div id="section4">
+				<p>Open Graph (OG) tags are meta tags that you can add to the '<head>' section of your HTML to provide metadata about a webpage. These tags are used by social media platforms like Facebook, Twitter, LinkedIn, and others to display information about your page when a link is shared. Here's a step-by-step tutorial on how to use OG tags: 
+
+				<h3>Step 1:</h3> 
+					<p>Include the Required Meta Tags in the <div class="code-block-strip"></div>Section of HTML</p>
+				<div class="code-block-html">
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html lang="en"&gt;<br>
+    &lt;head&gt;<br>
+        &lt;!-- Add the following OG tags --&gt;<br>
+        &lt;meta property="og:title" content="Your Page Title"/&gt;<br>
+        &lt;meta property="og:description" content="A brief description of your page"/&gt;<br>
+        &lt;meta property="og:url" content="https://www.yourwebsite.com"/&gt;<br>
+        &lt;meta property="og:image" content="https://www.yourwebsite.com/images/your-image.jpg"/&gt;<br>
+        
+        &lt;!-- Optional OG tags --&gt;<br>
+        &lt;meta property="og:type" content="website"/&gt;<br>
+        &lt;meta property="og:site_name" content="Your Site Name"/&gt;<br>
+        
+        &lt;!-- Twitter card tags (optional) --&gt;<br>
+        &lt;meta name="twitter:card" content="summary_large_image"/&gt;<br>
+        &lt;meta name="twitter:site" content="@yourtwitterhandle"/&gt;<br>
+        &lt;meta name="twitter:title" content="Your Page Title"/&gt;<br>
+        &lt;meta name="twitter:description" content="A brief description of your page"/&gt;<br>
+        &lt;meta name="twitter:image" content="https://www.yourwebsite.com/images/your-image.jpg"/&gt;<br>
+
+        &lt;!-- Other meta tags, styles, and scripts go here --&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br>
+        &lt;!-- Your webpage content goes here --&gt;<br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;<br>
+</div>
+
+<h2>Step 2: Replace Placeholder Values</h2>
+
+<p>Replace the placeholder values with your actual page information. Make sure to provide a concise and appealing title, a brief and engaging description, a valid URL, and an image URL for the og:image tag.</p>
+
+<h2>Step 3: Understand Optional OG Tags</h2>
+
+- `og:type`: Specifies the type of your content (e.g., website, article, video).
+- `og:site_name`: Specifies the name of your website.
+- `twitter:card`: Specifies the type of Twitter card to be used (e.g., summary, summary_large_image).
+- `twitter:site`: Your Twitter username.
+- `twitter:title`, `twitter:description`, `twitter:image`: Twitter-specific tags for title, description, and image.
+
+### Step 4: Validate OG Tags
+
+After adding OG tags, you can use the Facebook Sharing Debugger (https://developers.facebook.com/tools/debug/) or the Twitter Card Validator (https://cards-dev.twitter.com/validator) to check if your OG tags are set up correctly.
+
+### Step 5: Test on Social Media
+
+Share your webpage on various social media platforms to see how the OG tags are displayed. This ensures that your shared links look attractive and provide the intended information.
+
+That's it! By adding OG tags to your HTML, you enhance the appearance of your shared links on social media platforms.</p>
+		</div>		
+			<!-- app.component.html -->
 <div class="sliding-box">
   <pdf-viewer [src]="pdfSrc" [render-text]="true"></pdf-viewer>
 </div>
@@ -292,8 +350,8 @@
           </div>
         </div>
       </div>
-    </div>
-	  </div>
+   
+	  
 		</section>
 </body>
 	</div></body></html>
