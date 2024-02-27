@@ -85,7 +85,10 @@ a:hover{
 .container-fluid{padding-left:20px;padding-right:20px;*zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";}
 .container-fluid:after{clear:both;}
 p{
-    margin: 0 0 9px;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-left: 0;
+    margin-bottom: 9px;
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 18px;

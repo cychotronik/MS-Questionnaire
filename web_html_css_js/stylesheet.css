@@ -251,6 +251,23 @@ ul li:hover a {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.carousel {
+            perspective: 200px;
+            transform-style: preserve-3d;
+            position: relative;
+            transform: rotateY(0deg);
+        }
+        .item {
+            position: absolute;
+            background-color: #000;
+            width: 250px;
+            height: 152px;
+            line-height: 152px;
+            color: #fff;
+            text-align: center;
+            font-size: 2em;
+        }
 .about {
 
     padding-right: 0px;
@@ -272,7 +289,7 @@ ul li:hover a {
 }
 
 .code-block-htmlid {
-	width: 13%;
+	width: 5%;
     font-family: "Courier New", monospace;
     background-color: #353738;
     border: 1px solid #232425;border-radius: 5px;
@@ -289,24 +306,7 @@ ul li:hover a {
     word-wrap: break-word;
 }
 .code-block-bashid {
-	width: 13%;
-    font-family: "Courier New", monospace;
-    background-color: #353738;
-    border: 1px solid #232425;border-radius: 5px;
-    border-left: 3px solid #f36d33;
-    color: #fff;
-    page-break-inside: avoid;
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    max-width: 100%;
-    overflow: auto;
-    padding: 7px;
-    display: block;
-    word-wrap: break-word;
-}
-.code-block {
-	width: 70%;
+	width: 10%;
     font-family: "Courier New", monospace;
     background-color: #353738;
     border: 1px solid #232425;border-radius: 5px;
@@ -323,8 +323,26 @@ ul li:hover a {
     word-wrap: break-word;
 }
 
+    }.code-block {
+    width: 85%;
+    font-family: "Courier New", monospace;
+    background-color: #353738;
+    border: 1px solid #232425;
+    border-radius: 5px;
+    border-left: 3px solid #f36d33;
+    color: #fff;
+    page-break-inside: avoid;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 100%;
+    padding: 7px;
+    display: block;
+    white-space: pre;
+}
+
 .code-block-html {
-	width: 70%;
+	width: 85%;
     font-family: "Courier New", monospace;
     background-color: #353738;
     border: 1px solid #232425;border-radius: 5px;
@@ -358,7 +376,27 @@ ul li:hover a {
     float: left;
     margin-top: 35px;
 }
-
+.frame {
+	height: 30%;
+    width: 66%;
+	align-content: center;
+    background: hsla(0,0%,16%,1.00);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: hsla(0,0%,16%,1);
+    /* [disabled]page-break-inside: avoid; */
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 100%;
+    overflow: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    display: block;
+    word-wrap: break-word;
+}
 .gallery .thumbnail h4 {
     margin: 5px;
     color: #52BAD5;

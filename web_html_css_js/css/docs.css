@@ -37,7 +37,8 @@ form.jsfiddle {
 }
 
 .container h2 {
-  margin-top: 1em;
+    margin-top: 1em;
+    margin-right: 0px;
 }
 
 .container h3 {
