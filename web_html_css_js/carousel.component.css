@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* carousel.component.css */
+
+/* Styles for the entire carousel container */
+.app-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Styles for each carousel item */
+.carousel-item {
+  width: 250px;
+  height: 152px;
+  margin-right: 10px; /* Adjust spacing between items */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Style the visible carousel item */
+.carousel-item.visible {
+  opacity: 1;
+}
+
+/* Additional styling for the iframe inside each item */
+.carousel-item iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}

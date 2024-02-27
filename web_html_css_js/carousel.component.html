@@ -1,0 +1,8 @@
+<!doctype html>
+<!-- carousel.component.html -->
+
+<div ng-controller="CarouselController">
+    <div ng-repeat="track in tracks" class="carousel-item" ng-show="track.visible">
+        <iframe ng-src="{{ track.src }}" width="250" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
